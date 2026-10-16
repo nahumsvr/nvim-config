@@ -1086,7 +1086,16 @@ do
 end
 
 -- ============================================================
--- SECTION 10: OPTIONAL EXAMPLES / NEXT STEPS
+-- SECTION 10: MARKDOWN RENDERING
+-- ============================================================
+do
+  vim.pack.add { 'https://github.com/MeanderingProgrammer/render-markdown.nvim' }
+  require('render-markdown').setup {}
+  vim.keymap.set('n', '<leader>tm', '<cmd>RenderMarkdown toggle<CR>', { desc = '[T]oggle [M]arkdown rendering' })
+end
+
+-- ============================================================
+-- SECTION 11: OPTIONAL EXAMPLES / NEXT STEPS
 -- kickstart.plugins.* examples
 -- ============================================================
 do
